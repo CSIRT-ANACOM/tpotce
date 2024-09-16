@@ -712,6 +712,7 @@ services:
     pull_policy: ${TPOT_PULL_POLICY}
     volumes:
      - ${TPOT_DATA_PATH}:/data
+     - /home/ubuntu/logstash/logstash.conf:/etc/logstash/logstash.conf
 
 ## Map Redis Service
   map_redis:
