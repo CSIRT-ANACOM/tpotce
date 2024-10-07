@@ -757,15 +757,15 @@
         - "Raspbian"
         - "Ubuntu"
 
- - name: Clone / Update T-Pot repository (All)
+    - name: Clone / Update T-Pot repository (All)
       git:
-        repo: 'https://github.com/CSIRT-ANACOM/tpotce.git'
+        repo: 'https://github.com/CSIRT-ANACOM/tpotce'
         dest: '/home/{{ ansible_user_id }}/tpotce/'
         version: master
         clone: yes
         update: no
       when: ansible_distribution in ["AlmaLinux", "Debian", "Fedora", "openSUSE Tumbleweed", "Raspbian", "Rocky", "Ubuntu"]
-      
+
     - name: Add current user to Docker, T-Pot group (All)
       become: true
       user:
