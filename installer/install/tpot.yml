@@ -759,7 +759,7 @@
 
     - name: Clone / Update T-Pot repository (All)
       git:
-        repo: 'https://github.com/gonresendes/tpotce'
+        repo: 'https://github.com/CSIRT-ANACOM/tpotce.git'
         dest: '/home/{{ ansible_user_id }}/tpotce/'
         version: master
         clone: yes
